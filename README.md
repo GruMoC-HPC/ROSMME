@@ -30,4 +30,3 @@ $> mount /distro/CentOS-7.5-x86_64
 $> dg /distro/CentOS-7.5-x86_64/
 ```
 Thus, when `$> ls /distro/CentOS-7.5-x86_64/` is excecuted, the installation files are shown.
-Intento de edicion
