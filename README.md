@@ -7,7 +7,7 @@ The ISO image will be downloaded in the folder `/distro/iso/`, which is already 
 $> cd /distro/iso
 $> cd wget http://mirror.upb.edu.co/centos/7.5.1804/isos/x86_64/CentOS-7-x86_64
 ```
-Create the folder where the repository is going to be located:
+Create a folder where the repository is going to be located:
 ```
 $> mkdir -pv /distro/CentOS-7.5-x86_64
 ```
@@ -30,6 +30,3 @@ $> mount /distro/CentOS-7.5-x86_64
 $> dg /distro/CentOS-7.5-x86_64/
 ```
 Thus, when `$> ls /distro/CentOS-7.5-x86_64/` is excecuted, the installation files are shown.
-
-
-czxcxzxz
