@@ -32,12 +32,13 @@ $> dg /distro/CentOS-7.5-x86_64/
 Thus, when `$> ls /distro/CentOS-7.5-x86_64/` is excecuted, the installation files are shown.
 
 
-//////////////////////////
-etc / exports
-In Linux system with NFS you can specify in which computers the content is shared. The list of resources that the server computer will share is located in / etc / exports Therefore The / etc / exports file controls which file systems are exported to remote hosts (host or host computers or other connected devices), the Export file specifies options such as which devices it is possible to connect to for an assigned IP range and privileges or options that these hosts have
-The options for each of the hosts must be placed in parentheses directly after the host identifier, without spaces separating the host and the first parenthesis, for our case the hosts are a function of a range of IP addresses
-/ distro is a folder that contains the server which is being shared for the host range assigned inside the parentheses are the permissions for the computers of the network in this case we have applied
-/ distro 10.10.0.0/16(ro,root_squash,mp,crossmnt)
+
+** etc / exports**
+In Linux system with NFS you can specify in which computers the content is shared. The list of resources that the server computer will share is located in / etc / exports Therefore The **/ etc /** exports file controls which file systems are exported to remote hosts (host or host computers or other connected devices), the Export file specifies options such as which devices it is possible to connect to for an assigned IP range and privileges or options that these hosts have
+The options for each of the hosts must be placed in parentheses directly after the host identifier, without spaces separating the host and the first parenthesis, for our case the hosts are a function of a range of IP addresses  `/ distro `,  is a folder that contains the server which is being shared for the host range assigned inside the parentheses are the permissions for the computers of the network in this case we have applied
+
+$>/ distro 10.10.0.0/16(ro,root_squash,mp,crossmnt)
+```
 • ro: read-only permissions, if nothing is specified by default this permission is applied.
 • rw: write permissions.
 • root_squash: mapping the identity of the root user for security. When the client with the root user is connected to the shared folder, the UID of the root user will be mapped by that of an anonymous user of the server computer, so that he can not be a root user on the server computer. By default this option is activated if not specified otherwise.
