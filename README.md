@@ -33,11 +33,11 @@ Thus, when `$> ls /distro/CentOS-7.5-x86_64/` is excecuted, the installation fil
 
 
 
-###etc / exports
+### etc / exports
 In Linux system with NFS you can specify in which computers the content is shared. The list of resources that the server computer will share is located in / etc / exports Therefore The **/ etc /** exports file controls which file systems are exported to remote hosts (host or host computers or other connected devices), the Export file specifies options such as which devices it is possible to connect to for an assigned IP range and privileges or options that these hosts have
 The options for each of the hosts must be placed in parentheses directly after the host identifier, without spaces separating the host and the first parenthesis, for our case the hosts are a function of a range of IP addresses  `/ distro `,  is a folder that contains the server which is being shared for the host range assigned inside the parentheses are the permissions for the computers of the network in this case we have applied
 
-$>/ distro 10.10.0.0/16(ro,root_squash,mp,crossmnt)
+`/ distro 10.10.0.0/16(ro,root_squash,mp,crossmnt)`
 ```
 • ro: read-only permissions, if nothing is specified by default this permission is applied.
 • rw: write permissions.
@@ -49,11 +49,12 @@ $>/ distro 10.10.0.0/16(ro,root_squash,mp,crossmnt)
 • anonuid: you can map the identity of the users you want to specify. Very useful if you want to share a directory but want to know from which machine is being written.
 • nohide -> If you import a directory that has another directory mounted inside it and the one in the lower level resides in another partition, the client will only be able to see the content of the superior.
 • crossmnt -> It is equivalent to nohide but you do not need to make the entries in exports of the child directory.
+```
 
 
-/ etc / hosts
+### / etc / hosts
 This file is used to obtain a relation between a machine name and an IP address: on each line of / etc / hosts an IP address and the corresponding machine names are specified, so that a user does not have to remember addresses but host names. Usually they include the addresses, names and aliases of all the equipment connected to the local network. The purpose of assigning names to IP numbers is to make them easy for people to remember. Actually, an IP address identifies a network interface associated with a device such as a network card. Since each computer can have several network cards and several interfaces on each card, a single computer can have several names in the domain name system. Each team is identified The format of a line in this file can be
-
+```
 
 #*** SP Management ***
 #iDRAC:
@@ -72,3 +73,4 @@ This file is used to obtain a relation between a machine name and an IP address:
 20.40.1.3     n03.mpi    mpi-n03    n03.40ge    node03.mpi
 20.40.1.4     n04.mpi    mpi-n04    n04.40ge    node04.mpi
 20.40.1.5     n05.mpi    mpi-n05    n05.40ge    node05.mpi
+```
