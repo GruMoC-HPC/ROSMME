@@ -33,7 +33,7 @@ Thus, when `$> ls /distro/CentOS-7.5-x86_64/` is excecuted, the installation fil
 
 
 
-** etc / exports**
+###etc / exports
 In Linux system with NFS you can specify in which computers the content is shared. The list of resources that the server computer will share is located in / etc / exports Therefore The **/ etc /** exports file controls which file systems are exported to remote hosts (host or host computers or other connected devices), the Export file specifies options such as which devices it is possible to connect to for an assigned IP range and privileges or options that these hosts have
 The options for each of the hosts must be placed in parentheses directly after the host identifier, without spaces separating the host and the first parenthesis, for our case the hosts are a function of a range of IP addresses  `/ distro `,  is a folder that contains the server which is being shared for the host range assigned inside the parentheses are the permissions for the computers of the network in this case we have applied
 
