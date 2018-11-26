@@ -53,7 +53,7 @@ The options for each of the hosts must be placed in parentheses directly after t
 
 
 ### / etc / hosts
-This file is used to obtain a relation between a machine name and an IP address: on each line of / etc / hosts an IP address and the corresponding machine names are specified, so that a user does not have to remember addresses but host names. Usually they include the addresses, names and aliases of all the equipment connected to the local network. The purpose of assigning names to IP numbers is to make them easy for people to remember. Actually, an IP address identifies a network interface associated with a device such as a network card. Since each computer can have several network cards and several interfaces on each card, a single computer can have several names in the domain name system. Each team is identified The format of a line in this file can be
+This file is used to obtain a relation between a machine name and an IP address: on each line of `/ etc /` hosts an IP address and the corresponding machine names are specified, so that a user does not have to remember addresses but host names. Usually they include the addresses, names and aliases of all the equipment connected to the local network. The purpose of assigning names to IP numbers is to make them easy for people to remember. Actually, an IP address identifies a network interface associated with a device such as a network card. Since each computer can have several network cards and several interfaces on each card, a single computer can have several names in the domain name system. Each team is identified The format of a line in this file can be
 ```
 
 #*** SP Management ***
@@ -76,7 +76,7 @@ This file is used to obtain a relation between a machine name and an IP address:
 ```
 ### The sysconfig directory
 
-This directory contains files that control the configuration of your system. The contents of this section highlight some of the files found in the directory **/ etc / sysconfig /**, its function, and its contents. This information is not intended to be exhaustive, as many of these files have a variety of options that are only used in very specific circumstances, so the content of this directory depends on the packages you have installed on your system.
+This directory contains files that control the configuration of your system. The contents of this section highlight some of the files found in the directory `/ etc / sysconfig /`, its function, and its contents. This information is not intended to be exhaustive, as many of these files have a variety of options that are only used in very specific circumstances, so the content of this directory depends on the packages you have installed on your system.
 
 **/ etc / sysconfig / nfs**
 
@@ -84,3 +84,23 @@ Controls which ports use remote procedure call **(RPC)**  services for NFS v2 an
 
 **/ etc / sysconfig / dhcpd**
 It contains the arguments of the dhcpd daemon **"Dynamic Host Configuration Protocol (DHCP)"** and the **"Internet Bootstrap Protocol (BOOTP)"**. **DHCP** and **BOOTP** assign names of servers to machines on the network.
+
+**/ etc / sysconfig / xinetd**
+It passes arguments to xinetd at the moment of startup which initiates programs for internet services when a requirement appears at the port of that service.
+
+**/ etc / sysconfig / ntpd**
+
+The `/ etc / sysconfig / ntpd`  is used to pass arguments to the ntpd daemon at boot time. The ntpd daemon configures and maintains the system clock to synchronize with a standard Internet time server. It implements version 4 of the Network Time Protocol (NTP).
+
+**/ etc / sysconfig / ntpd**
+The `/ etc / sysconfig / ntpd`  is used to pass arguments to the ntpd daemon at boot time. The ntpd daemon configures and maintains the system clock to synchronize with a standard Internet time server. It implements version 4 of the Network Time Protocol (NTP).
+
+**/ etc / sysconfig /networking /**
+This directory is used by the Network Administration Tool (system-config-network), and its content should not be edited manually. For more information about configuring network interfaces with the Network Administration Tool,
+network-scripts /
+This directory contains the following configuration files related to the network:
+```
+o Network configuration files for each configured network interface, such as ifcfg-eth0 for Ethernet interface eth0.
+o The scripts used for ifdown and ifdown network interfaces, such as ifdown and ifup.
+o The scripts used for ifup-isdn and ifdown-isdn ISDN interfaces, such as ifup-isdn and ifdown-isdn.
+o Several scripts of shared network functions that should not be edited directly.```
