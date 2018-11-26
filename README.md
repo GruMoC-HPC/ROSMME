@@ -100,7 +100,7 @@ This directory is used by the Network Administration Tool (system-config-network
 network-scripts /
 This directory contains the following configuration files related to the network:
 ```
-o Network configuration files for each configured network interface, such as ifcfg-eth0 for Ethernet interface eth0.
-o The scripts used for ifdown and ifdown network interfaces, such as ifdown and ifup.
-o The scripts used for ifup-isdn and ifdown-isdn ISDN interfaces, such as ifup-isdn and ifdown-isdn.
-o Several scripts of shared network functions that should not be edited directly.```
+• Network configuration files for each configured network interface, such as ifcfg-eth0 for Ethernet interface eth0.
+• The scripts used for ifdown and ifdown network interfaces, such as ifdown and ifup.
+• The scripts used for ifup-isdn and ifdown-isdn ISDN interfaces, such as ifup-isdn and ifdown-isdn.
+• Several scripts of shared network functions that should not be edited directly.```
