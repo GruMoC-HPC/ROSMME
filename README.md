@@ -74,3 +74,4 @@ This file is used to obtain a relation between a machine name and an IP address:
 20.40.1.4     n04.mpi    mpi-n04    n04.40ge    node04.mpi
 20.40.1.5     n05.mpi    mpi-n05    n05.40ge    node05.mpi
 ```
+
