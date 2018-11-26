@@ -76,4 +76,4 @@ This file is used to obtain a relation between a machine name and an IP address:
 ```
 ### The sysconfig directory
 
-This directory contains files that control the configuration of your system. The contents of this section highlight some of the files found in the directory ** / etc / sysconfig / **, its function, and its contents. This information is not intended to be exhaustive, as many of these files have a variety of options that are only used in very specific circumstances, so the content of this directory depends on the packages you have installed on your system.
+This directory contains files that control the configuration of your system. The contents of this section highlight some of the files found in the directory **/ etc / sysconfig /**, its function, and its contents. This information is not intended to be exhaustive, as many of these files have a variety of options that are only used in very specific circumstances, so the content of this directory depends on the packages you have installed on your system.
